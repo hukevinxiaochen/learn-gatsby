@@ -7,4 +7,8 @@ install:
   - npm ci
 deploy:
   provider: heroku:git
+  api_key:
+    secure: HEROKU_API_KEY
+  git: https://git.heroku.com/khu-stack.git
+  on: main
   edge: true

@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/khu-md/learn-gatsby.svg?branch=main)](https://travis-ci.org/khu-md/learn-gatsby)
+
+First step is getting the continuous integration and deployment set up.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">

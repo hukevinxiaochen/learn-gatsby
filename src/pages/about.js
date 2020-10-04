@@ -1,10 +1,23 @@
 import React from "react"
+import Layout from "../components/layout"
 
-export default function About() {
+export default function About({data}) {
   return (
-    <div style={{ color: `teal` }}>
-      <h1>About Gatsby</h1>
+    <Layout>
+      <h1>About</h1>
       <p>Such wow. Very React.</p>
-    </div>
+    </Layout>
   )
 }
+
+// import { graphql } from "gatsby"
+/* Page query */
+// export const query = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `

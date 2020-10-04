@@ -1,3 +1,10 @@
 .layout {
-  background-color: #fbf1c7
+  background-color: #fbf1c7;
+}
+
+.navbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1c1e0;
 }

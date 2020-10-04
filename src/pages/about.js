@@ -5,7 +5,6 @@ export default function About({data}) {
   return (
     <Layout>
       <h1>About</h1>
-      <p>Such wow. Very React.</p>
     </Layout>
   )
 }

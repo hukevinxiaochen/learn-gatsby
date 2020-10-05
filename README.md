@@ -1,6 +1,59 @@
 [![Build Status](https://travis-ci.org/khu-md/learn-gatsby.svg?branch=main)](https://travis-ci.org/khu-md/learn-gatsby)
 
-First step is getting the continuous integration and deployment set up.
+This app implements a progressive web application frontend using Gatsby and [gatsby-plugin-manifest](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/) and [gatsby-plugin-offline](https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/).
+
+## Bugs
+
+```
+       > gatsby build
+       
+       success open and validate gatsby-configs - 0.086s
+lscpu: failed to determine number of CPUs: /sys/devices/system/cpu/possible: No such file or directory
+       success load plugins - 0.773s
+       success onPreInit - 0.046s
+       success delete html and css files from previous builds - 0.004s
+       success initialize cache - 0.008s
+       success copy gatsby files - 0.043s
+       success onPreBootstrap - 0.017s
+lscpu: failed to determine number of CPUs: /sys/devices/system/cpu/possible: No such file or directory
+       success createSchemaCustomization - 0.008s
+       success Checking for changed pages - 0.000s
+       success source and transform nodes - 0.178s
+       success building schema - 0.488s
+       info Total nodes: 53, SitePage nodes: 3 (use --verbose for breakdown)
+       success createPages - 0.038s
+       success Checking for changed pages - 0.000s
+       success createPagesStatefully - 0.076s
+       success update schema - 0.063s
+       success onPreExtractQueries - 0.001s
+       success extract queries from components - 0.201s
+       success write out redirect data - 0.001s
+       success Build manifest and related icons - 0.113s
+       success onPostBootstrap - 0.115s
+       info bootstrap finished - 5.199s
+       success run static queries - 0.012s - 1/1 80.81/s
+error There was an error in your GraphQL query:
+Cannot return null for non-nullable field SitePage.internalComponentName.
+The field "SitePage.internalComponentName." was explicitly defined as non-nullable via the schema customization API (by yourself or a plugin/theme). This means that this field is not optional and you have to define a value. If this is not your desired behavior and you defined the schema yourself, go to "createTypes" in gatsby-node.js. If you're using a plugin/theme, you can learn more here on how to fix field types:
+https://www.gatsbyjs.org/docs/schema-customization/#fixing-field-types
+   1 | query tmpbuildF8B90555SrcpagesindexJs3427033138 {
+   2 |   allSitePage {
+   3 |     edges {
+   4 |       node {
+   5 |         path
+>  6 |         internalComponentName
+     |         ^
+   7 |         id
+   8 |       }
+   9 |     }
+  10 |   }
+  11 | }
+  12 | 
+File path: /tmp/build_f8b90555/src/pages/index.js
+Url path: /
+Plugin: none
+       not finished run page queries - 0.026s
+```
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">

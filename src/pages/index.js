@@ -8,7 +8,6 @@ export const data = graphql`
       edges {
         node {
           path
-          internalComponentName
           id
         }
       }
@@ -31,7 +30,7 @@ export default function Home({ data }) {
       <ul>
         {pages.map(n => (
           <li key={n.node.id}>
-            <Link to={n.node.path}>{n.node.internalComponentName.slice(9)}</Link>
+            <Link to={n.node.path}>{n.node.path.slice(1)}</Link>
           </li>
         ))}
       </ul>
